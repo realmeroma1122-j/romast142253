@@ -1,0 +1,53 @@
+1)
+«ОЧЕНЬ ВАЖНО: Makefile ломается, если перед командами сборки стоят пробелы вместо табуляции. Убедись, что перед строками, начинающимися с $(CXX), стоит ровно одно нажатие клавиши Tab, а не пробелы. проверять только то, что ты сказал?»
+
+2)
+«(Если выдаст ошибку command not found, попробуй написать просто make). опять not found»
+
+3)
+«$ mingw32-make
+
+cc     Makefile.c   -o Makefile
+
+process_begin: CreateProcess(NULL, cc Makefile.c -o Makefile, ...) failed.
+
+make (e=2): Не удается найти указанный файл.
+
+mingw32-make: *** No targets specified and no makefile found.  Stop.»
+
+«там Makefile.c»
+
+4)
+«cc     Makefile.c   -o Makefile
+
+process_begin: CreateProcess(NULL, cc Makefile.c -o Makefile, ...) failed.
+
+make (e=2): Не удается найти указанный файл.
+
+: recipe for target 'Makefile' failed
+
+mingw32-make: *** [Makefile] Error 2
+
+по прежнему вроде там .с но отдельно нормальный мэйкфайл есть»
+
+5)
+«mingw32-make: *** No targets.  Stop.»
+
+«пустой видимо»
+
+6)
+«сделай в мейне чтобы выводился изначальный массив»
+
+7)
+«в base нет main»
+
+Скриншот GitHub с состоянием: «There isn’t anything to compare. main and feature-sorting-lib are identical»
+
+8)
+«а что там с запуском на линуксе, все вообще норм?»
+
+«с моей стороны проблем нет?»
+
+
+
+
